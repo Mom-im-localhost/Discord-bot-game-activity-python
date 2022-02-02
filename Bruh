@@ -1,0 +1,5 @@
+@Bot.event
+async def on_ready():
+  while True:
+    game = discord.Game("Ваш текст")
+    await Bot.change_presence(status=discord.Status.idle, activity=game)
